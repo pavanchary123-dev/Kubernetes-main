@@ -4,3 +4,8 @@ for j in {1..10}; do
     done  
     wait  # Wait for all background curl processes to finish before next iteration
 done
+#### for nodeport ##########
+while true; do
+  curl -s http://98.92.245.155:31127/ > /dev/null &
+  sleep 0.05
+done
