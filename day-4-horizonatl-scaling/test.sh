@@ -6,6 +6,6 @@ for j in {1..10}; do
 done
 #### for nodeport ##########
 while true; do
-  curl -s http://98.92.245.155:31127/ > /dev/null &
+  curl -s http://98.92.245.155:31127/ > /dev/null &     ### <node_ip:nodeport>
   sleep 0.05
 done
